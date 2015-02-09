@@ -1,0 +1,27 @@
+<div id = "header">
+	<a href="/"><h1>Flash Cards</h1></a>
+	<h4>Flashy Cards</h4>
+	<a href="/logout"><div id = "logbutton"><p>Logout</p></div></a>
+</div>
+<div id = "user_body">
+	<div id = "play_new">
+	<h1>Play a deck</h1>
+		<form action= "/round/new" method= "POST">
+			<select name = "deck">
+			  <% @decks.each {|deck| %> 
+			  <option value= <%= deck.id %> > <%= deck.title %></option>
+			  <% } %> 
+			</select>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<div id = "latest">
+		<h1>Welcome <%= @user.name.capitalize %>!</h1>
+
+		<h3>Latest Rounds:</h3>
+		<% @rounds.last(10).reverse.each {|round| %>
+			<p><%= round.deck.title %> ---- you got <%= round.guesses.where(correct: true).size %> correct out of <%=round.guesses.size %></p>
+		<% } %>
+	</div>
+</div>

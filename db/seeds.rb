@@ -1,0 +1,17 @@
+# User.create(name: "andrew")
+# Deck.create(title: "State Capitals", user_id: 1)
+# Card.create(deck_id: 1, question: "What is the capital of Alaska", answer: 'juno')
+# Card.create(deck_id: 1, question: "What is the capital of New York", answer: 'albany')
+# Card.create(deck_id: 1, question: "What is the capital of California", answer: 'sacremento')
+# Card.create(deck_id: 1, question: "What is the capital of Connecticut", answer: 'hartford')
+# Card.create(deck_id: 1, question: "What is the capital of Mass", answer: 'boston')
+Card.create(deck_id: 1, question: "What is the capital of Alabama", answer: 'montgomery')
+
+Card.create(deck_id: 1, question: "What is the capital of Arizona", answer: 'phoenix')
+Card.create(deck_id: 1, question: "What is the capital of Arkansas", answer: 'little rock')
+
+Card.create(deck_id: 1, question: "What is the capital of Colorado", answer: 'denver')
+Card.create(deck_id: 1, question: "What is the capital of Delaware", answer: 'dover')
+Card.create(deck_id: 1, question: "What is the capital of Florida", answer: 'tallahassee')
+Card.create(deck_id: 1, question: "What is the capital of Georgia", answer: 'atlanta')
+Card.create(deck_id: 1, question: "What is the capital of Hawaii", answer: 'honolulu')

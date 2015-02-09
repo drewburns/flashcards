@@ -1,0 +1,197 @@
+html {
+}
+
+
+/*start index*/
+#header {
+	height: 5em;
+	background-color: #A4E7FF;
+
+}
+
+#header h1 {
+	font-size: 35px;
+	margin-left: 50px;
+	float: left;
+	color:black;
+}
+#header h4{
+	font-style: italic;
+	margin-top: 40px;
+	margin-left: 20px;
+	float:left;
+	color:#E3BB00;
+}
+
+#logbutton {
+	border-radius: 10px;
+	float: right;
+	height: 50px;
+	width: 100px;
+	background-color: #527F7D;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+#logbutton p{
+	color:white;
+	text-decoration: none;
+	margin-top: 13px;
+	margin-left: 27px;
+}
+#rowone {
+	margin-left: 220px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 17em;
+}
+
+#rowtwo {
+	padding-bottom: 20px;
+	margin-left: 220px;
+	padding-top: 20px;
+	height: 17em;
+}
+.box {
+	margin-left: 90px;
+	display: inline-block;
+	background-color: #29403F;
+	width: 21em;
+	height: 16em;
+	box-shadow: 10px 10px 5px #888888;
+}
+.dropdown {
+	text-align: center;
+	color:white;
+	cursor: pointer;
+}
+.para {
+	color: white;
+	text-align: center;
+	display: none;
+}
+#index_body {
+	height: 700px;
+	width: 100%;
+}
+
+/*end index*/
+
+/*start login*/
+
+#login_body{
+	margin-left: 20%;
+	width: 60%;
+	height: 300px;
+	background-color: #527F7D;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#login_body h1{
+	padding-top: 20px;
+	text-align: center;
+	color: white;
+}
+
+#login_body form {
+	margin-left: 35%;
+}
+
+
+/*end login*/
+
+
+/*start user*/
+
+
+#user_body {
+	margin-left: 20%;
+	width: 60%;
+	height: 620px;
+	background-color:  #527F7D;
+	box-shadow: 5px 5px 2px #888888;
+}
+
+#play_new {
+	color: white;
+	float: left;
+	padding-top: 30px;
+	margin-left: 20px;
+
+}
+#play_new select {
+	width: 200px;
+	height: 100px;
+}
+
+#latest {
+	color: white;
+	padding-top: 30px;
+	margin-right: 20px;
+	float: right;
+}
+
+/*end user*/
+
+
+
+/*start play*/
+
+#flashcard{
+	margin-left: 25%;
+	width: 50%;
+	height: 300px;
+	background-color: #527F7D;
+	box-shadow: 10px 10px 5px #888888;
+}
+#flashcard h1 {
+	color: white;
+	text-align: center;
+}
+
+#flashcard form{
+	color: white;
+	margin-top: 50px;
+	text-align: center;
+}
+/*end play*/
+
+
+
+/*start result*/
+#result {
+	margin-left: 25%;
+	width: 50%;
+	height: 300px;
+	background-color: #527F7D;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#result h1 {
+	color:white;
+	text-align: center;
+}
+
+#result h3 {
+	color:white;
+	text-align: center;
+}
+
+#nextcard {
+	margin-left: 43%;
+	border-radius: 10px;
+	float: left;
+	height: 50px;
+	width: 100px;
+	background-color:  #A4E7FF;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+#nextcard p{
+	color:black;
+	text-decoration: none;
+	margin-top: 13px;
+	margin-left: 27px;
+}
+
+/*end result*/

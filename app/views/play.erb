@@ -1,0 +1,13 @@
+<div id = "header">
+	<a href="/"><h1>Flash Cards</h1></a>
+	<h4>Flashy Cards</h4>
+</div>
+
+
+<div id = "flashcard">
+	<h1><%= @card.question %>?</h1>
+	<form action= <%="round/"+ @round.id.to_s + "/"+ @card.id.to_s %> method= "POST">
+		<input type="text" name="answer" value="">
+		<input type="submit" value="Submit">
+	</form>
+</div>
