@@ -1,0 +1,13 @@
+<div id = "header">
+	<a href="/"><h1>Flash Cards</h1></a>
+	<h4>Flashy Cards</h4>
+</div>
+<div id = "add_deck">
+	<h1><%=@error%></h1>
+	<h1>What is the name of the deck?</h1>
+	<form action= "/newdeck" method= "POST">
+		<h3>What is the name of the deck</h3>
+		<input type="text" name="title" value="">
+		<input type="submit" value="Submit">
+	</form>
+</div>

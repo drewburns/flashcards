@@ -4,9 +4,24 @@
 </div>
 
 <div id = "login_body">
-	<h1>Enter your name to login or create new account</h1>
+	<h1>Login</h1>
 	<form action= "/login" method= "POST">
-		<input type="text" name="user_input" value="">
+		<input type="text" name="name_login" value="Username">
+		</br>
+		</br>
+		<input type="password" name="pass_login" value="Password">
+		</br>
+		</br>
+		<input type="submit" value="Submit">
+	</form>
+	<h1>Sign Up</h1>
+	<form action= "/newuser" method= "POST">
+		<input type="text" name="name_create" value="Username">
+		</br>
+		</br>
+		<input type="password" name="pass_create" value="Password">
+		</br>
+		</br>
 		<input type="submit" value="Submit">
 	</form>
 </div>

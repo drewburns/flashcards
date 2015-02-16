@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $( "#drop1" ).mouseenter(function() {
-  $( "#para1" ).slideDown( "slow", function() {
+    $( "#para1" ).show( "slow", function() {
     // Animation complete.
   	});
   });
   $( "#drop1" ).mouseleave(function() {
-  $( "#para1" ).slideUp( "slow", function() {
+    $( "#para1" ).hide( "slow", function() {
     // Animation complete.
   	});
   });
@@ -14,12 +14,12 @@ $(document).ready(function() {
 
 
   $( "#drop2" ).mouseenter(function() {
-  $( "#para2" ).slideDown( "slow", function() {
+    $( "#para2" ).show( "slow", function() {
     // Animation complete.
   	});
   });
   $( "#drop2" ).mouseleave(function() {
-  $( "#para2" ).slideUp( "slow", function() {
+    $( "#para2" ).hide( "slow", function() {
     // Animation complete.
   	});
   });
@@ -27,24 +27,24 @@ $(document).ready(function() {
 
 
   $( "#drop3" ).mouseenter(function() {
-  $( "#para3" ).slideDown( "slow", function() {
+    $( "#para3" ).show( "slow", function() {
     // Animation complete.
   	});
   });
   $( "#drop3" ).mouseleave(function() {
-  $( "#para3" ).slideUp( "slow", function() {
+    $( "#para3" ).hide( "slow", function() {
     // Animation complete.
   	});
   });
 
 
   $( "#drop4" ).mouseenter(function() {
-  $( "#para4" ).slideDown( "slow", function() {
+    $( "#para4" ).show( "slow", function() {
     // Animation complete.
   	});
   });
   $( "#drop4" ).mouseleave(function() {
-  $( "#para4" ).slideUp( "slow", function() {
+    $( "#para4" ).hide( "slow", function() {
     // Animation complete.
   	});
   });

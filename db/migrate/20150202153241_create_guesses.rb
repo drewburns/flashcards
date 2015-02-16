@@ -3,7 +3,7 @@ class CreateGuesses < ActiveRecord::Migration
 	  create_table :guesses do |t|
 	    t.integer :card_id
 	    t.integer :round_id
-		t.boolean :correct
+			t.boolean :correct
 			
 	    t.timestamps
 	  end

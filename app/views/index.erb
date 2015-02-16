@@ -1,7 +1,11 @@
 <div id = "header">
 	<a href="/"><h1>Flash Cards</h1></a>
 	<h4>Flashy Cards</h4>
-	<a href="/login"><div id = "logbutton"><p>Login</p></div></a>
+	<% if @user == nil%>
+		<a href="/login"><div id = "logbutton"><p>Login</p></div></a>
+	<% else %>
+		<a href="/login"><div id = "logbutton"><p>User</p></div></a>
+	<% end %>
 </div>
 
 <div id = "index_body">

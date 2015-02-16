@@ -1,0 +1,20 @@
+<div id = "header">
+	<a href="/"><h1>Flash Cards</h1></a>
+	<h4>Flashy Cards</h4>
+</div>
+<div id = "addcard">
+	<h1><%=@error%></h1>
+	<h1>Which deck would you like to add it to?</h1>
+	<form action= "/newcard" method= "POST">
+		<select name = "deck">
+		  <% @decks.each {|deck| %> 
+		  <option value= <%= deck.id %> > <%= deck.title %></option>
+		  <% } %> 
+		</select>
+		<h3>What is the question?</h3>
+		<input type="text" name="question" value="">
+		<h3>What is the answer?</h3>
+		<input type="text" name="answer" value="">
+		<input type="submit" value="Submit">
+	</form>
+</div>
