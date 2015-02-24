@@ -19,23 +19,24 @@ get '/login' do
 end
 
 post '/newuser' do
-	user = User.new(name: params[:name_create], encrypted_password:  hash_password([:pass_create]))
+	password = User.create_password(params[:pass_create])
+	user = User.new(name: params[:name_create], password_hash: password )
 	if user.valid?
-		User.create(name: params[:name_create], encrypted_password:  hash_password(params[:pass_create]))
-	else
-		session[:user_id] = user.id
-		redirect '/login'
-	end
-	redirect '/user'
-end
-
-post '/login' do
-	user = User.where(name: params[:name_login])
-	if user && user.password == hash_password(params[:pass_login])
+		user.save
 		session[:user_id] = user.id
 		redirect '/user'
 	else
-	 redirect '/login'
+		redirect '/login'
+	end
+end
+
+post '/login' do
+	user = User.login_check(params[:name_login],params[:pass_login])
+	if user == false 
+		redirect '/login'
+	else
+		session[:user_id] = user.id
+		redirect '/user'
 	end
 end
 
